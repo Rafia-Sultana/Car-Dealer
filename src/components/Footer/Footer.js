@@ -1,4 +1,6 @@
 import React from 'react';
+import { MdOutlineArrowForwardIos } from 'react-icons/md';
+
 import './Footer.css'
 
 const Footer = () => {
@@ -12,11 +14,12 @@ const Footer = () => {
             <div className='middle-column'>
 
                 <h6>Useful Links</h6>
-                <p>Change Oil and Filter</p>
-                <p>Brake Pads Replacement</p>
-                <p>Timing Belt Replacement</p>
-                <p>Pre-purchase Car Inspection</p>
-                <p> Starter Replacement</p>
+
+                <p> <MdOutlineArrowForwardIos></MdOutlineArrowForwardIos> Change Oil and Filter</p>
+                <p><MdOutlineArrowForwardIos></MdOutlineArrowForwardIos> Brake Pads Replacement</p>
+                <p><MdOutlineArrowForwardIos></MdOutlineArrowForwardIos> Timing Belt Replacement</p>
+                <p><MdOutlineArrowForwardIos></MdOutlineArrowForwardIos> Pre-purchase Car Inspection</p>
+                <p> <MdOutlineArrowForwardIos></MdOutlineArrowForwardIos> Starter Replacement</p>
 
 
             </div>
