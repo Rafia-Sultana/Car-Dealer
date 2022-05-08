@@ -1,0 +1,21 @@
+.footer {
+    font-size: 15px;
+    margin-top: 60px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(49, 44, 44);
+    color: aliceblue;
+    height: 200px;
+    align-items: center;
+}
+
+.first-column {
+    margin-left: 40px;
+    margin-right: 100px;
+}
+
+.middle-column p {
+    margin: 4px 0px;
+    font-size: 15px;
+}

@@ -1,0 +1,33 @@
+.col {
+    width: 270px;
+    height: 440px;
+    position: relative;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.card-text {
+    margin: 4px 0px;
+    margin-right: 3px;
+}
+
+.buttonUpdate {
+    padding: 10px 30px;
+    border-radius: 2px solid red;
+    background: white;
+    border: 2px solid #f44336;
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.1s ease-in-out;
+    margin-top: 25px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 3px;
+}
+
+.buttonUpdate:hover {
+    background-color: rgb(198, 60, 60);
+    color: white;
+}
