@@ -9,3 +9,41 @@
     flex-wrap: wrap;
     gap: 20px;
 }
+
+.second-section {
+    margin-top: 150px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.left-part {
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+.third-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+    margin-left: 100px;
+    margin-right: 30px;
+    gap: 20px;
+}
+
+.right-part {
+
+
+    margin-right: 40px;
+    bottom: 20px;
+}
+
+.right-part:hover {
+    background-color: rgb(215, 69, 69);
+    color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 10px 10px;
+
+}
