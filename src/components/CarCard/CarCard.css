@@ -26,6 +26,7 @@
     background-color: white;
     color: black;
     border: 2px solid rgb(255, 52, 52);
+    margin-left: 90px;
 }
 
 .buttonDelete:hover {

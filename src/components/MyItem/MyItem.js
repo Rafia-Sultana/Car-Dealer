@@ -12,12 +12,12 @@ const MyItem = () => {
 
     const email = user?.email
     useEffect(() => {
-        fetch(`http://localhost:5000/myitem/?email=${email}`)
+        fetch(`http://localhost:4000/myitem/?email=${email}`)
             .then(res => res.json())
             .then(data => setMyItem(data))
     }, [myItem, user]);
     const deleteItem = (id) => {
-        const url = ` http://localhost:5000/item/${id}`
+        const url = ` http://localhost:4000/item/${id}`
         fetch(url, {
             method: 'DELETE',
         })

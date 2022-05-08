@@ -13,7 +13,7 @@ import './Home.css'
 const Home = () => {
     const [item, setItem] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/item')
+        fetch('http://localhost:4000/item')
             .then(res => res.json())
             .then(data => setItem(data))
     }, [item])
@@ -22,7 +22,8 @@ const Home = () => {
             <Banner></Banner>
 
             <div className="inventoryContainer">
-                <h1 className='title'>products</h1>
+                <h1 className='title'>PRODUCTS</h1>
+
                 <div className="inventoryItems">
                     {
                         item.slice(0, 6).map(data => <InventoryCard

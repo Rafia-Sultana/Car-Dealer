@@ -10,14 +10,14 @@ const ManageItem = () => {
 
     const [item, setItem] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/item')
+        fetch('http://localhost:4000/item')
             .then(res => res.json())
             .then(data => setItem(data))
     }, [item])
 
 
     const deleteItem = (id) => {
-        const url = `http://localhost:5000/item/${id}`
+        const url = `http://localhost:4000/item/${id}`
         fetch(url, {
             method: 'DELETE',
         })

@@ -7,18 +7,18 @@ const CardUpdate = () => {
     const [item, setItem] = useState([])
     const [changedQuantity, setChangedQuantity] = useState('')
     useEffect(() => {
-        fetch(`http://localhost:5000/item/${id}`)
+        fetch(`http://localhost:4000/myitem/${id}`)
             .then(res => res.json())
             .then(data => setItem(data))
     }, [id, changedQuantity])
+    console.log(id);
 
-
-    let amount = item?.quantity * 1;
+    let amount = item?.quantity * 1
 
     const deliverHandler = () => {
         amount = amount - 1;
 
-        fetch(`http://localhost:5000/item/${id}`, {
+        fetch(`http://localhost:4000/item/${id}`, {
             method: 'PATCH',
             body: JSON.stringify({ amount }),
             headers: {
@@ -34,10 +34,10 @@ const CardUpdate = () => {
         e.preventDefault()
         let restack = e.target.restock.value;
         restack = parseInt(restack)
-        amount = amount + restack
+        amount = amount + restack;
 
 
-        fetch(`http://localhost:5000/item/${id}`, {
+        fetch(`http://localhost:4000/item/${id}`, {
             method: 'PATCH',
             body: JSON.stringify({ amount }),
             headers: {
@@ -51,7 +51,7 @@ const CardUpdate = () => {
         e.target.reset();
     }
     return (
-        <div>
+        <div className='itemUpdateBox'>
             <div className='updatePageContainer'>
                 <img src={item.img} alt="" />
                 <div className='productInfoBox'>

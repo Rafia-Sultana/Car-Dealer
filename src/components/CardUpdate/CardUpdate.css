@@ -8,7 +8,7 @@
 
 .updatePageContainer {
     width: 800px;
-
+    /* border: 1px solid lightgray; */
     padding: 4px;
     display: flex;
     gap: 20px;
@@ -21,7 +21,7 @@
 }
 
 .name {
-    font-size: 20px;
+    font-size: 50px;
     margin: 5px 0;
     font-weight: bold;
     color: rgb(55, 55, 55);
@@ -76,7 +76,7 @@
 .deliverBtn {
     width: 100px;
     height: 40px;
-    background: rgb(243, 150, 150);
+    background: rgb(122, 183, 31);
     border: none;
     color: white;
     font-weight: bold;
@@ -86,7 +86,7 @@
 }
 
 .deliverBtn:hover {
-    background: rgb(244, 120, 120);
+    background: rgb(85, 137, 7);
 }
 
 .restockBtn {

@@ -18,7 +18,7 @@ const AddItem = () => {
 
         const data = { name, price, img, quantity, description, sold, supplierEmail, supplierName }
 
-        fetch('http://localhost:5000/item', {
+        fetch('http://localhost:4000/item', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
