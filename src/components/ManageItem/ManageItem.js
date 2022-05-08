@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
 import CarCard from '../CarCard/CarCard';
-import './ManageItem.css'
+
+import './ManageItem.css';
 
 
 
@@ -34,6 +35,8 @@ const ManageItem = () => {
     return (
         <div>
             <h1 className='manageCarTitle'>Manage All Products</h1>
+
+
             <div className='manageCarContainer'>
                 {
                     item.map(item => <CarCard key={item._id} item={item} deleteItem={deleteItem} />)
