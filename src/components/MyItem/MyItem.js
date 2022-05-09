@@ -12,7 +12,7 @@ const MyItem = () => {
 
     const email = user?.email
     useEffect(() => {
-        fetch(`http://localhost:5000/useritem/?email=${email}`)
+        fetch(`http://evening-crag-89379.herokuapp.com/useritem/?email=${email}`)
             .then(res => res.json())
             .then(data => setMyItem(data))
     }, [myItem, user]);
