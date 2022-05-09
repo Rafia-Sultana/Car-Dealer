@@ -7,7 +7,7 @@ const CardUpdate = () => {
     const [item, setItem] = useState([])
     const [changedQuantity, setChangedQuantity] = useState('')
     useEffect(() => {
-        fetch(`http://localhost:4000/myitem/${id}`)
+        fetch(`https://evening-crag-89379.herokuapp.com/myitem/${id}`)
             .then(res => res.json())
             .then(data => setItem(data))
     }, [id, changedQuantity])
@@ -18,7 +18,7 @@ const CardUpdate = () => {
     const deliverHandler = () => {
         amount = amount - 1;
 
-        fetch(`http://localhost:4000/item/${id}`, {
+        fetch(`https://evening-crag-89379.herokuapp.com/item/${id}`, {
             method: 'PATCH',
             body: JSON.stringify({ amount }),
             headers: {
@@ -37,7 +37,7 @@ const CardUpdate = () => {
         amount = amount + restack;
 
 
-        fetch(`http://localhost:4000/item/${id}`, {
+        fetch(`https://evening-crag-89379.herokuapp.com/item/${id}`, {
             method: 'PATCH',
             body: JSON.stringify({ amount }),
             headers: {

@@ -10,14 +10,14 @@ const ManageItem = () => {
 
     const [item, setItem] = useState([])
     useEffect(() => {
-        fetch('http://localhost:4000/item')
+        fetch('https://evening-crag-89379.herokuapp.com/item')
             .then(res => res.json())
             .then(data => setItem(data))
     }, [item])
 
 
     const deleteItem = (id) => {
-        const url = `http://localhost:4000/item/${id}`
+        const url = `https://evening-crag-89379.herokuapp.com/item/${id}`
         fetch(url, {
             method: 'DELETE',
         })

@@ -13,7 +13,7 @@ import './Home.css'
 const Home = () => {
     const [item, setItem] = useState([])
     useEffect(() => {
-        fetch('http://localhost:4000/item')
+        fetch('https://evening-crag-89379.herokuapp.com/item')
             .then(res => res.json())
             .then(data => setItem(data))
     }, [item])

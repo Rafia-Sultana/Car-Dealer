@@ -12,12 +12,13 @@ const MyItem = () => {
 
     const email = user?.email
     useEffect(() => {
-        fetch(`http://localhost:4000/myitem/?email=${email}`)
+        fetch(`http://localhost:5000/useritem/?email=${email}`)
             .then(res => res.json())
             .then(data => setMyItem(data))
     }, [myItem, user]);
+    console.log(myItem);
     const deleteItem = (id) => {
-        const url = ` http://localhost:4000/item/${id}`
+        const url = ` https://evening-crag-89379.herokuapp.com/item/${id}`
         fetch(url, {
             method: 'DELETE',
         })

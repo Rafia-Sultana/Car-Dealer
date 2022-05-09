@@ -18,7 +18,7 @@ const AddItem = () => {
 
         const data = { name, price, img, quantity, description, sold, supplierEmail, supplierName }
 
-        fetch('http://localhost:4000/item', {
+        fetch('https://evening-crag-89379.herokuapp.com/item', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
